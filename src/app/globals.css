@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+background-color: black;
+    color: #fff; /* Ensure text is readable on the dark background */
+}
+
+df-messenger {
+    --df-messenger-bot-message: #d3e7f0;  
+    --df-messenger-user-message: #5bc5f7;
+    --df-messenger-font-color: #000000; 
+    --df-messenger-button-titlebar-color: #14a17254;
+  --df-messenger-chat-background-color: #ffffff; 
+  --df-messenger-input-box-color: #ebdbdb;     
+  --df-messenger-input-box-border-color: #140808;
+  --df-messenger-send-icon: #196ac2;      
+}
