@@ -199,7 +199,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-6 grow">
                   <p className="mb-2 font-bold ">Land line</p>
-                  <p className="text-neutral-500"> (0211) 431 2030</p>
+                  <p className="text-neutral-500"> (0211) XXXXXXXX</p>
                 </div>
               </div>
             </div>
