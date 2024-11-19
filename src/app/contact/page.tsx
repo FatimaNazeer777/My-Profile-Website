@@ -225,7 +225,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-6 grow">
                   <p className="mb-2 font-bold ">Whatsapp Contact</p>
-                  <p className="text-neutral-500">+923151200841</p>
+                  <p className="text-neutral-500">+92315-XXXXXXX</p>
                 </div>
               </div>
             </div>
