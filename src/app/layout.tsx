@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
+import ChatBot from "@/components/ChatBot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
        <body className={`${inter.className} overflow-x-hidden`}> 
         <NavBar />
         {children}
-        
+        <ChatBot />
       </body>
     </html>
   );
