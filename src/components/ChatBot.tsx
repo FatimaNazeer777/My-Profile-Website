@@ -70,17 +70,29 @@ const ChatBot: React.FC = () => {
 
   const parseMessage = (content: string): JSX.Element[] => {
     const parts = content.split(/(https?:\/\/[^\s]+)/g);
-    return parts.map((part, index) =>
-      part.match(/https?:\/\/[^\s]+/) ? (
-        <Link key={index} href={part} passHref target="_blank" className="text-blue-500 underline break-words">
-          
-            {part}
-        </Link>
-      ) : (
-        <span key={index}>{part}</span>
-      )
-    );
+    return parts.map((part, index) => {
+      if (part.match(/^https?:\/\/[^\s]+$/)) {
+        // Remove trailing dot if present
+        const cleanedLink = part.endsWith(".") ? part.slice(0, -1) : part;
+        return (
+          <Link
+            key={index}
+            href={cleanedLink}
+            target="_blank"
+            className="text-blue-500 underline break-words"
+          >
+            {cleanedLink}
+          </Link>
+        );
+      } else {
+        return <span key={index}>{part}</span>;
+      }
+    });
   };
+  
+  
+  
+  
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
