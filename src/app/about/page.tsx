@@ -16,7 +16,8 @@ const About = () => {
             <Image
               src={me}
               alt="me2"
-              fill
+              height={400}
+              width={400}
               className="rounded-full shadow-lg transform transition-transform duration-500 hover:scale-105 hover:rotate-3"
               data-aos="zoom-in"
               data-aos-easing="ease-out-cubic"
