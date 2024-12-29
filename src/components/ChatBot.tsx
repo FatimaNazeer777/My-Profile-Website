@@ -92,19 +92,17 @@ const ChatBot: React.FC = () => {
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
-      {/* Floating button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`p-4 rounded-full bg-gray-800 text-white shadow-lg hover:bg-gray-700 transition-all duration-200 ${
+        className={`fixed bottom-4 right-4 p-3 rounded-full bg-gray-800 text-white shadow-lg hover:bg-gray-700 transition-all duration-200 ${
           isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
         <FaRobot />
       </button>
 
-      {/* Chat window */}
       <div
-        className={`absolute bottom-0 right-0 w-[95%] sm:w-96 bg-gray-900 rounded-lg shadow-xl transition-all duration-300 transform ${
+        className={`fixed bottom-16 right-4 w-[90%] max-w-[360px] bg-gray-900 rounded-lg shadow-xl transition-all duration-300 transform ${
           isOpen ? "scale-100" : "scale-0"
         }`}
       >
@@ -121,8 +119,7 @@ const ChatBot: React.FC = () => {
           </button>
         </div>
 
-        {/* Messages */}
-        <div className="h-80 sm:h-96 overflow-y-auto p-4 space-y-4 bg-gray-900">
+        <div className="h-[60vh] max-h-[500px] min-h-[300px] overflow-y-auto p-3 space-y-3 bg-gray-900">
           {messages.map((message, index) => (
             <div
               key={index}
@@ -159,7 +156,6 @@ const ChatBot: React.FC = () => {
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Input form */}
         <form onSubmit={handleSubmit} className="border-t border-gray-700 p-4">
           <div className="flex gap-2">
             <input
