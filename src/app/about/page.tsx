@@ -3,10 +3,10 @@
 import Image from "next/image";
 import me from "../../../About.jpg";
 import Link from "next/link";
-import Typewriter from 'typewriter-effect';
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import Typewriter from "typewriter-effect";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
- const About = () => {
+const About = () => {
   return (
     <>
       <section className="text-white body-font bg-black overflow-hidden">
@@ -16,8 +16,7 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa';
             <Image
               src={me}
               alt="me2"
-              height={400}
-              width={400}
+              fill
               className="rounded-full shadow-lg transform transition-transform duration-500 hover:scale-105 hover:rotate-3"
               data-aos="zoom-in"
               data-aos-easing="ease-out-cubic"
@@ -29,8 +28,11 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
           {/* Text Content */}
           <div className="text-center lg:w-2/3 w-full mt-10">
-            <h1 className="ml-3 text-4xl font-serif font-bold text-white hover:text-pink-600 animate-bounce hover:uppercase">
-              <span className="text-pink-600 text-5xl hover:text-white">A</span>bout Me
+            <h1 className="ml-3 text-4xl font-serif font-bold text-white hover:text-pink-600 animate-bounce transition-all duration-700 hover:uppercase">
+              <span className="text-pink-600 text-5xl hover:text-white transition-all duration-700">
+                A
+              </span>
+              bout Me
             </h1>
             <h2
               className="title-font sm:text-4xl text-3xl mb-4 text-pink-400 font-serif font-semibold relative overflow-hidden"
@@ -40,7 +42,7 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa';
             >
               <Typewriter
                 options={{
-                  strings: ['Crafting My Tech and Business Journey!'],
+                  strings: ["Crafting My Tech and Business Journey!"],
                   autoStart: true,
                   loop: true,
                 }}
@@ -54,7 +56,16 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa';
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
             >
-              I am an experienced frontend developer, currently expanding my expertise by learning Next.js for both backend and frontend development. My journey in tech was significantly shaped by completing a TypeScript course at the Governor Sindh IT Initiative (GIAIC). It was here that I also embarked on learning Cloud Applied Generative AI Engineering with cutting-edge technologies. As a senior student at GIAIC, I take pride in assisting my peers in their learning journeys. Additionally, I am pursuing a Bachelor degree in Business Administration (BBA), where I am gaining insights into the business industry.
+              I am an experienced frontend developer, currently expanding my
+              expertise by learning Next.js for both backend and frontend
+              development. My journey in tech was significantly shaped by
+              completing a TypeScript course at the Governor Sindh IT Initiative
+              (GIAIC). It was here that I also embarked on learning Cloud
+              Applied Generative AI Engineering with cutting-edge technologies.
+              As a senior student at GIAIC, I take pride in assisting my peers
+              in their learning journeys. Additionally, I am pursuing a Bachelor
+              degree in Business Administration (BBA), where I am gaining
+              insights into the business industry.
             </p>
             <div className="flex justify-center space-x-4 mt-6">
               <button className="inline-flex items-center justify-center text-white animate-bounce bg-blue-600 border-0 py-2 px-4 focus:outline-none hover:bg-blue-400 text-lg rounded-full transition-transform transform hover:scale-110 hover:shadow-lg">

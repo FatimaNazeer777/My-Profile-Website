@@ -89,10 +89,6 @@ const ChatBot: React.FC = () => {
       }
     });
   };
-  
-  
-  
-  
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
@@ -108,7 +104,7 @@ const ChatBot: React.FC = () => {
 
       {/* Chat window */}
       <div
-        className={`absolute bottom-0 right-0 w-96 bg-gray-900 rounded-lg shadow-xl transition-all duration-300 transform ${
+        className={`absolute bottom-0 right-0 w-[95%] sm:w-96 bg-gray-900 rounded-lg shadow-xl transition-all duration-300 transform ${
           isOpen ? "scale-100" : "scale-0"
         }`}
       >
@@ -126,7 +122,7 @@ const ChatBot: React.FC = () => {
         </div>
 
         {/* Messages */}
-        <div className="h-96 overflow-y-auto p-4 space-y-4 bg-gray-900">
+        <div className="h-80 sm:h-96 overflow-y-auto p-4 space-y-4 bg-gray-900">
           {messages.map((message, index) => (
             <div
               key={index}

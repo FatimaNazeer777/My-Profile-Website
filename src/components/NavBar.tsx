@@ -24,7 +24,7 @@ const NavBar = () => {
           {/* Logo Section */}
           <Link href="/" className="flex items-center space-x-4">
             <div className="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-pink-500">
-              <Image src={me} alt="Logo" layout="fill" objectFit="cover" />
+              <Image src={me} alt="Logo" fill className="object-cover" />
             </div>
             <h1 className="text-3xl font-semibold text-white">
               <span className="text-pink-500">P</span>ortfolio
