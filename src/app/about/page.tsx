@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import me from "../../../About.jpg";
+import me from "./About.jpg";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
@@ -19,9 +19,7 @@ const About = () => {
               height={400}
               width={400}
               className="rounded-full shadow-lg transform transition-transform duration-500 hover:scale-105 hover:rotate-3"
-              data-aos="zoom-in"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000"
+              
             />
             {/* Circular Background Decoration */}
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 opacity-30 rounded-full animate-pulse"></div>
