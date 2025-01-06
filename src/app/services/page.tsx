@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Services() {
   return (
-    <section className="bg-gradient-to-br from-black to-gray-800 py-24 flex items-center justify-center">
+    <section className="bg-black py-24 flex items-center justify-center">
       <div className="container mx-auto text-center text-white">
         {/* Header Section */}
         <h1 className="text-5xl font-extrabold pb-12 text-transparent bg-clip-text bg-pink-600 animate-pulse">
